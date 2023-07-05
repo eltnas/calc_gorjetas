@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora de gorjetas</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Assets/css/style.css"/>
+</head>
+<body>
+    <div id="content">
+        <section id="calc">
+            <div id="calc-topo">
+                <h1>Gorjetas 1.0</h1>
+            </div>
+            <div id="calc-valor">
+
+                <p>Valor total da conta:</p>
+                <label for="conta">R$</label>
+                <input type="text" class="valor" id="conta" placeholder=" 0,00" required />
+
+                <p>Como você classifica o serviço?</p>
+                <div id="star">
+                    <img class="starImg" id="star_1" src="./Assets/Imagem/star.png">
+                    <img class="starImg" id="star_2" src="./Assets/Imagem/star.png">
+                    <img class="starImg" id="star_3" src="./Assets/Imagem/star.png">
+                    <img class="starImg" id="star_4" src="./Assets/Imagem/star.png">
+                    <img class="starImg" id="star_5" src="./Assets/Imagem/star.png">
+                </div>
+                <p>Quantas pessoas vão dividir a conta?</p>
+                <input type="number" placeholder="1" name="pessoas" id="pessoas" class="formInput" required />
+                <br />
+                <button type="submit" id="calcGorjeta">Calcular</button>
+            </div>
+        </section>
+
+        <section id="bill">
+            <div id="content-bill">
+                <h1>Descrição</h1>
+                <div class="desc-total">
+                    <h3>Valor Total:</h3>
+                    <h3><span id="valor-total">R$ -</span></h3>
+                </div>
+                <div class="desc-total">
+                    <h3>Classificação do serviço:</h3>
+                    <h3><span id="valor-class">- Estrela / -%</span></h3>
+                </div>
+                <div class="desc-total">
+                    <h3>Quantidade de passoas:</h3>
+                    <h3><span id="valor-pessoas">- Pessoa</span></h3>
+                </div>
+                <div class="desc-total">
+                    <h3>Total gorjeta:</h3>
+                    <h3><span id="valor-gorjeta">R$ -</span></h3>
+                </div>
+                <div class="desc-total">
+                    <h3>Total Por Pessoa:</h3>
+                    <h3><span id="valor-dividido">R$ -</span></h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script src="./Assets/js/js.js"></script>
+</body>
+</html>

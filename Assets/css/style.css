@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Imagem/bkg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+#content {
+  width: 70%;
+  max-width: 1000px;
+  min-width: 750px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+#content #calc {
+  width: 45%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+#content #calc #calc-topo {
+  width: 100%;
+  height: 50px;
+  background-color: #f9672c;
+  border-radius: 10px 10px 3px 3px;
+}
+#content #calc #calc-topo h1 {
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin: 0 5px;
+  padding-top: 5px;
+  text-align: center;
+}
+#content #calc #calc-valor {
+  padding: 20px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+#content #calc #calc-valor p {
+  margin: 0 0 5px 0;
+}
+#content #calc #calc-valor input {
+  width: 100px;
+  font-size: 1.3rem;
+  margin: 0 0 30px 0;
+}
+#content #calc #calc-valor #star {
+  height: 40px;
+  width: 80%;
+  margin: 10px 0 15px 0;
+  display: flex;
+  justify-content: space-around;
+}
+#content #calc #calc-valor #star .starImg {
+  cursor: pointer;
+}
+#content #calc #calc-valor #star img {
+  height: 40px;
+  width: 40px;
+}
+#content #calc #calc-valor button {
+  width: 80%;
+  height: 40px;
+  margin: 30px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  background-color: #f9672c;
+}
+#content #calc #calc-valor button:hover {
+  color: #ffffff;
+  background-color: #f47309;
+}
+#content #bill {
+  width: 40%;
+  height: 100%;
+  background-image: url("../Imagem/494173934d80055443.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+#content #bill #content-bill {
+  width: 70%;
+  margin: 80px 0 0 50px;
+  transform: rotate(-1deg);
+}
+#content #bill #content-bill h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+#content #bill #content-bill .desc-total {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#content #bill #content-bill .desc-total h3 {
+  font-size: 1.2rem;
+}
+#content #bill #content-bill .desc-total span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
